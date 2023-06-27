@@ -144,3 +144,8 @@ header a:hover {
   background-size: cover;
   height: 100%;
 }
+
+.tile{
+  background-color: #282828;
+  color: #fffff2;
+}

@@ -73,7 +73,7 @@ const Home=()=>{
 
 
                 </Grid>
-                <Grid item xs style={{paddingTop:'5vh', paddingLeft:'27%'}}>
+                <Grid item xs style={{paddingTop:'5vh'}}>
                         <PageTiles/>
                 </Grid>
 
