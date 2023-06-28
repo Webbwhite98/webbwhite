@@ -52,7 +52,7 @@ const Header =()=>{
                 <div className={'navbar-nav-scroll'}>
                     <ul className={'nav justify-content-end'}>
                         <li className={'nav-item'}>
-                            <NavLink to={"/contact-us"} className={'menu__link'} exact={true}>Contact Us</NavLink>
+                            <NavLink to={"/contact"} className={'menu__link'} exact={true}>Contact Me</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +73,7 @@ const Header =()=>{
                                 <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/"} className={'menu__link'} exact={true}>Home</NavLink></li>
                                 <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/about"} className={'menu__link'} exact={true}>About Me</NavLink></li>
                                 <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/projects"} className={'menu__link'} exact={true}>Projects</NavLink></li>
-                                <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/contact-us"} className={'menu__link'} exact={true}>Contact</NavLink></li>
+                                <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/contact-us"} className={'menu__link'} exact={true}>Contact Me</NavLink></li>
                             </ul>
                         </nav>:''
                     }

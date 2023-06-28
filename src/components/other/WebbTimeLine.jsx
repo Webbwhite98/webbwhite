@@ -16,10 +16,9 @@ import BugReportIcon from '@mui/icons-material/BugReport';
 const WebbTimeLine=()=>{
 
     return (
-        <Timeline position="alternate" style={{paddingTop:'5vh'}}>
-
+        <Timeline position="alternate"style={{paddingTop:'5vh'}}>
             <div style={{textAlign:'center'}}>
-                <h1>My Life</h1>
+                <h1>My Professional Timeline</h1>
             </div>
             <TimelineItem>
                 <TimelineOppositeContent
@@ -37,7 +36,7 @@ const WebbTimeLine=()=>{
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: '60px', px: 2 }}>
+                <TimelineContent className={'timeline'}  sx={{ py: '60px', px: 2 }}>
                     <Typography variant="h4" component="span">
                         University of South carolina
                     </Typography>
@@ -60,7 +59,7 @@ const WebbTimeLine=()=>{
                     <TimelineConnector />
                 </TimelineSeparator>
 
-                <TimelineContent sx={{ py: '60px', px: 2 }}>
+                <TimelineContent  className={'timeline'} sx={{ py: '60px', px: 2 }}>
                     <Typography variant="h4" component="span">
                         Townsquare Interactive
                     </Typography>
@@ -84,7 +83,7 @@ const WebbTimeLine=()=>{
                     </TimelineDot>
                     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: '60px', px: 2 }}>
+                <TimelineContent  className={'timeline'} sx={{ py: '60px', px: 2 }}>
                         <Typography variant="h4" component="span">
                             Comporium Communications
                         </Typography>

@@ -5,7 +5,6 @@ import {
     CardContent,
     CardMedia,
     Grid,
-
     Typography
 } from "@mui/material";
 import webb from '../../img/webb.JPG'
@@ -30,9 +29,8 @@ const Home=()=>{
                                     <Grid item xs>
                                         <CardContent sx={{ flex: '1 0 auto'}}>
                                             <CardMedia
-
                                                 component="img"
-                                                sx={{ width: '100%' }}
+                                                sx={{ width: '100%', opacity:1 }}
                                                 image={webb}
                                                 alt="webb img"
                                             />
@@ -73,13 +71,17 @@ const Home=()=>{
 
 
                 </Grid>
-                <Grid item xs style={{paddingTop:'5vh'}}>
+                <Grid item xs style={{paddingTop:'5vh', width:'100%'}}>
                         <PageTiles/>
                 </Grid>
 
                     <Grid item xs>
-                        <WebbTimeLine/>
+
+                            <WebbTimeLine/>
+
                     </Grid>
+
+
 
 
 

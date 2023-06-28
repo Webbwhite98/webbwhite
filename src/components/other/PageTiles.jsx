@@ -29,7 +29,7 @@ const PageTiles=()=>{
         <div className={'container'}>
             <Grid container direction={'row'} spacing={10}>
                 <Grid item xs>
-                    <Card   style={{backgroundColor:'#A0A0A0'}}>
+                    <Card   style={{backgroundColor:'#A0A0A0'}} className={'hover-effect'} onClick={()=>navigate("/about")}>
                         <CardHeader
                             avatar={
                                 <Avatar style={{backgroundColor:'#282828'}} aria-label="recipe">
@@ -47,13 +47,13 @@ const PageTiles=()=>{
 
                         </CardContent>
                         <CardActions>
-                            <Button onClick={()=>navigate("/about")} size="small">Learn More</Button>
+                            <Button  size="small">Learn More</Button>
                         </CardActions>
                     </Card>
                 </Grid>
 
                 <Grid item xs>
-                    <Card style={{backgroundColor:'#A0A0A0'}}>
+                    <Card  className={'hover-effect'} style={{backgroundColor:'#A0A0A0'} } onClick={()=>navigate("/projects")}>
                         <CardHeader
                             avatar={
                                 <Avatar style={{backgroundColor:'#282828'}}>
@@ -72,13 +72,13 @@ const PageTiles=()=>{
 
                         </CardContent>
                         <CardActions>
-                            <Button onClick={()=>navigate("/projects")} size="small">Learn More</Button>
+                            <Button  size="small">Learn More</Button>
                         </CardActions>
                     </Card>
                 </Grid>
 
                 <Grid item xs>
-                    <Card   style={{backgroundColor:'#A0A0A0'}}>
+                    <Card  className={'hover-effect'}  style={{backgroundColor:'#A0A0A0'}} onClick={()=>navigate("/contact")}>
                         <CardHeader
                             avatar={
                                 <Avatar style={{backgroundColor:'#282828'}} aria-label="recipe">
@@ -97,7 +97,7 @@ const PageTiles=()=>{
 
                         </CardContent>
                         <CardActions>
-                            <Button onClick={()=>navigate("/contact")} size="small">Learn More</Button>
+                            <Button  size="small">Learn More</Button>
                         </CardActions>
                     </Card>
                 </Grid>
