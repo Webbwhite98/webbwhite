@@ -57,8 +57,6 @@ const AboutMe=()=>{
                             I find great satisfaction in leveraging the power of Python for various tasks, such as developing Flask applications, building fast APIs,
                             and performing data cleanup work. Additionally, I have some working knowledge of PHP, which adds to my toolkit for diverse project requirements.
 
-
-
                         </Typography>
                         <Typography variant="body1" paragraph>
                             With my multifaceted skill set and passion for staying up-to-date with the latest industry trends,
@@ -77,16 +75,15 @@ const AboutMe=()=>{
                             A little About Myself
                         </Typography>
                         <Typography variant="body1" paragraph>
-                            Hi, My name is Richard Webb White. I go by my middle name, Webb. I attended
-                            the University Of South Carolina and obtaining a Bachelor of Science in Integrated Information Technology.
-                            Within a couple of Months of graduation, I was starting at Townsquare Interactive as a
-                            Quality Assurance Analyst doing manual Quality Assurance for Websites. I worked at Townsquare Interactive from February 15th, 2021 to
-                            December 18th, 2021. I have since worked at Comporium Communications as a Full Stack Developer.
+                            Hi, my name is Webb White. I graduated from the University Of South Carolina in December 2020
+                            and obtained a BS in Integrated Information Technology. I began work at Townsquare Interactive as a Quality Assurance Analyst primarily focused on websites.
+                            It was here that I first gained interest in web development.
+                            I then started a new role at Comporium Communications as a Full Stack Developer in December 2021.
                         </Typography>
                         <Typography variant="body1" paragraph>
-                            At Comporium I first learned the React framework. After getting a hang of it using JavaScript, I started using TypeScript.
-                            Once I felt like I had a handle on Frontend Development, I started building SpringBoot Applications for my frontends. This then turned into
-                            me helping our backend developers work on bigger and bigger projects.
+                            In my role at Comporium I initially utilized the react framework. After gaining competency using JavaScript,
+                            I transitioned to using TypeScript. As my confidence increased on frontend development, I started adding SpringBoot applications.
+                            This skill set enabled me to work assist and work alongside other developers on more complex projects.
                         </Typography>
                         <Typography variant="body1" paragraph>
                             Other than Software Development I enjoy being in the outdoors, spending time with my family, my girlfriend Jess, and my dog Luke!
