@@ -7,15 +7,15 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views-react-18-fix';
-import { autoPlay } from 'react-swipeable-views-utils';
+// import SwipeableViews from 'react-swipeable-views-react-18-fix';
+// import { autoPlay } from 'react-swipeable-views-react-18-fix';
 import Hiking from '../../img/Hiking.jpg'
 import Luke from '../../img/luke.jpg'
 import JessAndI from '../../img/JessAndI.jpg'
 import Float from '../../img/LukeAndIWater.jpg'
 import LukeWater from '../../img/LukeWater.jpg'
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
@@ -76,31 +76,31 @@ const ImageCarosuel=()=> {
             >
                 <Typography>{images[activeStep].label}</Typography>
             </Paper>
-            <AutoPlaySwipeableViews
-                axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                index={activeStep}
-                onChangeIndex={handleStepChange}
-                enableMouseEvents
-            >
-                {images.map((step, index) => (
-                    <div key={step.label}>
-                        {Math.abs(activeStep - index) <= 2 ? (
-                            <Box
-                                component="img"
-                                sx={{
-                                    // height: '70%',
-                                    display: 'block',
-                                    maxWidth: '100%',
-                                    overflow: 'hidden',
-                                    width: '100%',
-                                }}
-                                src={step.imgPath}
-                                alt={step.label}
-                            />
-                        ) : null}
-                    </div>
-                ))}
-            </AutoPlaySwipeableViews>
+            {/*<AutoPlaySwipeableViews*/}
+            {/*    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}*/}
+            {/*    index={activeStep}*/}
+            {/*    onChangeIndex={handleStepChange}*/}
+            {/*    enableMouseEvents*/}
+            {/*>*/}
+            {/*    {images.map((step, index) => (*/}
+            {/*        <div key={step.label}>*/}
+            {/*            {Math.abs(activeStep - index) <= 2 ? (*/}
+            {/*                <Box*/}
+            {/*                    component="img"*/}
+            {/*                    sx={{*/}
+            {/*                        // height: '70%',*/}
+            {/*                        display: 'block',*/}
+            {/*                        maxWidth: '100%',*/}
+            {/*                        overflow: 'hidden',*/}
+            {/*                        width: '100%',*/}
+            {/*                    }}*/}
+            {/*                    src={step.imgPath}*/}
+            {/*                    alt={step.label}*/}
+            {/*                />*/}
+            {/*            ) : null}*/}
+            {/*        </div>*/}
+            {/*    ))}*/}
+            {/*</AutoPlaySwipeableViews>*/}
             <MobileStepper
                 steps={maxSteps}
                 position="static"
