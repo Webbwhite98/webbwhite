@@ -28,11 +28,7 @@ const AboutMe=()=>{
                                       </Typography>
                               </Grid>
 
-                                   <Grid item xs>
-                                       <Typography variant="subtitle1" color="text.secondary" component="div">
-                                           Webb White
-                                       </Typography>
-                                   </Grid>
+
 
                            </CardContent>
                            </Grid>
@@ -43,15 +39,46 @@ const AboutMe=()=>{
 
 
 
-            <Grid item xs style={{paddingBottom:'8vh'}}>
+            <Grid item xs style={{paddingBottom:'1vh'}}>
 
                 <OffWhiteCard>
                     <CardContent>
                         <Typography variant="h4" gutterBottom>
-                           A little About Myself
+                           My Professional Areas of Focus
                         </Typography>
                         <Typography variant="body1" paragraph>
-                           Hi, My name is Richard Webb White. I go by my middle name, Webb. I attended
+                           Working at Comporium has allowed me to learn and excel in many areas. During my time, I have come to enjoy building DockerFiles and deploying my own applications to
+                            our DEV and QA Kubernetes Clusters. Included in this is setting up Code Pipelines to ensure CI/CD for the company's applications.
+                            While I manage ~50 applications, I still enjoy developing and deploying other applications.
+
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            I am a versatile full-stack developer with expertise in a wide range of technologies and frameworks.
+                            My proficiency extends beyond React and Spring Boot to include Express for applications and serving production React builds.
+                            I find great satisfaction in leveraging the power of Python for various tasks, such as developing Flask applications, building fast APIs,
+                            and performing data cleanup work. Additionally, I have some working knowledge of PHP, which adds to my toolkit for diverse project requirements.
+
+
+
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            With my multifaceted skill set and passion for staying up-to-date with the latest industry trends,
+                            I am confident in my ability to tackle complex challenges and deliver exceptional results.
+                        </Typography>
+                    </CardContent>
+                </OffWhiteCard>
+
+            </Grid>
+
+            <Grid item xs style={{paddingBottom:'4vh'}}>
+
+                <OffWhiteCard>
+                    <CardContent>
+                        <Typography variant="h4" gutterBottom>
+                            A little About Myself
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            Hi, My name is Richard Webb White. I go by my middle name, Webb. I attended
                             the University Of South Carolina and obtaining a Bachelor of Science in Integrated Information Technology.
                             Within a couple of Months of graduation, I was starting at Townsquare Interactive as a
                             Quality Assurance Analyst doing manual Quality Assurance for Websites. I worked at Townsquare Interactive from February 15th, 2021 to

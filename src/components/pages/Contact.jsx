@@ -1,61 +1,129 @@
 import React from 'react';
-import {Card, Grid} from "@mui/material";
+import {Card, CardContent, Grid, Link, List, ListItem, ListItemIcon, ListItemText, Typography} from "@mui/material";
+import {styled} from "@mui/system";
+import Button from "@mui/material/Button";
+import HomeIcon from '@mui/icons-material/Home';
+import FolderIcon from '@mui/icons-material/Home';
+import {useNavigate} from "react-router-dom";
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+const DarkCard = styled(Card)({
+    backgroundColor: '#202020', // Off-white background color
+    minWidth:800,
+    color:'white',
+    marginTop: 50,
+    padding: 20,
+
+});
+
+const ContactCard = styled('div')(({ theme }) => ({
+}));
 
 const Contact =()=>{
-
+    const navigate= useNavigate();
+    const gitHubUrl = "https://github.com/Webbwhite98?tab=repositories"
 
     return(
         <Grid container style={{height:'100vh'}} direction={'column'} alignItems={'center'}>
+
+            <Grid item xs className={'background-contact '} style={{paddingTop:'5vh', paddingBottom:'5vh'}}>
+                <Grid container direction={'column'} alignItems={'center'}>
+                    <Grid item xs>
+                        <DarkCard>
+                            <CardContent style={{textAlign:'center'}}>
+                                <Typography variant="h4" gutterBottom>
+                                   Thanks for visiting my website!
+                                </Typography>
+                                <Typography style={{paddingTop:'3vh'}} variant="subtitle1" >
+                                    <Button onClick={()=>navigate("/")} variant="contained" startIcon={<HomeIcon />}>
+                                       Back To Home
+                                    </Button>
+                                </Typography>
+                            </CardContent>
+                        </DarkCard>
+                    </Grid>
+                </Grid>
+            </Grid>
            <Grid item xs style={{paddingTop:'5vh'}}>
-               <Card style={{height:'50%'}}>
-                   <div >
-                       <div style={{paddingTop: '5%', paddingLeft:'2%'}} className={'row'}>
-                           <div className={'col'}>
-                               <h1>Thank you so much For visiting My Website!</h1> <br/>
-                               <strong>If you have any issues, questions, or concerns, use the Contact Us form on this page.<br/> <br/>
-                                   Our Team will reach out to you as soon as we can. <br/> <br/>
-                                   Thanks again for visting our website!
-                               </strong>
-                           </div>
-                           <div className={'col'}>
-                               <div className={'container-sm'}>
-                                   <div style={{marginBottom:'5%'}} className={'contact'}>
-                                       <div className={'row'}>
-                                           <div style={{textAlign:'center', marginBottom:'2%', marginTop:'2%'}} className={'col'}>
-                                               <h1>Contact Me</h1>
-                                           </div>
-                                       </div>
+               <div className={'col'}>
 
-                                       <div className={'row'}>
-                                           <div style={{marginBottom:'2%'}} className={'col'}>
-                                               {/*<input style={err && !name? {boxShadow:' 0 0 9px red'}:null} value={!name? '': name} placeholder={'Name *'} onChange={(e)=>setName(e.target.value)} className={'form-control'} required/>*/}
-                                           </div>
-                                       </div>
-                                       <div className={'row'}>
-                                           <div style={{marginBottom:'2%'}} className={'col'}>
-                                               {/*<input style={err && !email? {boxShadow:' 0 0 9px red'}:null} value={!email? '': email} placeholder={'Email *'} onChange={(e)=>setEmail(e.target.value)} className={'form-control'} required/>*/}
-                                           </div>
-                                       </div>
-                                       <div className={'row'}>
-                                           <div style={{marginBottom:'2%'}} className={'col'}>
-                                               {/*<textarea  v placeholder={'Message *'}  className={'form-control'} required/>*/}
-                                           </div>
-                                       </div>
+               </div>
 
-                                       <div style={{textAlign:'center'}} className={'row '}>
-                                           {/*<div style={{ paddingBottom:'5%'}} className={'col'}>*/}
-                                           {/*    <button style={{width:'50%'}} type="primary" loading={loading} onClick={()=>{setErr(false); sendEmail()}}>*/}
-                                           {/*        Send*/}
-                                           {/*    </button>*/}
-                                           {/*    /!*<button style={{width:'50%'}} onClick={()=>sendEmail()} className={'btn btn-primary'}>Send</button>*!/*/}
-                                           {/*</div>*/}
-                                       </div>
-                                   </div>
-                               </div>
+               <Card style={{backgroundColor:'#f9f9f9'}}>
+                    <Grid container direction={'row'} style={{padding:20}} spacing={7}>
+                        <Grid item xs={5}>
+                            <h1>Thank you so much For visiting My Website!</h1> <br/>
+                            <strong>If you have any questions, concerns, or just want to reach out, My information is on this page!<br/> <br/>
+                                I'll respond as quick as I can! <br/> <br/>
+                                Thanks again for visiting My website!
+                            </strong>
+                        </Grid>
 
-                           </div>
-                       </div>
-                   </div>
+                        <Grid item xs={7} style={{textAlign:'center'}}>
+                            <Grid container direction={'column'} alignItems={'center'}>
+                                <Grid item xs>
+                                    <Typography variant="h4">
+                                        My Contact Information
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item xs style={{textAlign:'center'}}>
+                                    {/*<ContactCard>*/}
+                                        <List>
+
+                                                <ListItem>
+                                                    <ListItemIcon>
+                                                        <LocalPhoneIcon />
+                                                    </ListItemIcon>
+                                                    <ListItemText
+                                                        primary="+1 (803) 415-0853"
+
+                                                    />
+                                                </ListItem>
+
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <EmailIcon />
+                                                </ListItemIcon>
+                                                <ListItemText
+                                                    primary="webbwhite1998@gmail.com"
+                                                />
+                                            </ListItem>
+
+
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <GitHubIcon />
+                                                </ListItemIcon>
+                                                <ListItemText
+                                                    primary={<Link target="_blank" href={gitHubUrl} underline="none">
+                                                        My GitHub Account
+                                                    </Link>}
+                                                />
+                                            </ListItem>
+
+
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <FolderIcon />
+                                                </ListItemIcon>
+                                                <ListItemText
+                                                    primary={<Link target="_blank" href={"https://www.keywordseogenerator.com/"} underline="none">
+                                                        My Keyword Generator Website
+                                                    </Link>}
+
+                                                />
+                                            </ListItem>
+
+                                        </List>
+                                    {/*</ContactCard>*/}
+                                </Grid>
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+
                </Card>
            </Grid>
 

@@ -73,7 +73,7 @@ const Header =()=>{
                                 <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/"} className={'menu__link'} exact={true}>Home</NavLink></li>
                                 <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/about"} className={'menu__link'} exact={true}>About Me</NavLink></li>
                                 <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/projects"} className={'menu__link'} exact={true}>Projects</NavLink></li>
-                                <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/contact-us"} className={'menu__link'} exact={true}>Contact Me</NavLink></li>
+                                <li><NavLink onClick={()=>setMobileNavOpen(!mobileNavOpen)} to={"/contact"} className={'menu__link'} exact={true}>Contact Me</NavLink></li>
                             </ul>
                         </nav>:''
                     }
