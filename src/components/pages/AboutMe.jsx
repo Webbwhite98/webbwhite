@@ -29,7 +29,6 @@ const AboutMe=()=>{
                               </Grid>
 
 
-
                            </CardContent>
                            </Grid>
                         </Card>
