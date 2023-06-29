@@ -97,7 +97,7 @@ const AboutMe=()=>{
             </Grid>
 
             <Grid item xs style={{paddingBottom:'5vh'}}>
-                <ImageCarosuel/>
+                {/*<ImageCarosuel/>*/}
             </Grid>
 
 
