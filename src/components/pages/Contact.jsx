@@ -10,10 +10,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 const DarkCard = styled(Card)({
     backgroundColor: '#202020', // Off-white background color
-    minWidth:800,
+    // minWidth:800,
     color:'white',
-    marginTop: 50,
-    padding: 20,
+    // marginTop: 50,
+    // padding: 20,
 
 });
 
@@ -25,7 +25,7 @@ const Contact =()=>{
     const gitHubUrl = "https://github.com/Webbwhite98?tab=repositories"
 
     return(
-        <Grid container style={{height:'100vh'}} direction={'column'} alignItems={'center'}>
+        <Grid container  direction={'column'} alignItems={'center'}>
 
             <Grid item xs className={'background-contact '} style={{paddingTop:'5vh', paddingBottom:'5vh'}}>
                 <Grid container direction={'column'} alignItems={'center'}>
@@ -45,14 +45,12 @@ const Contact =()=>{
                     </Grid>
                 </Grid>
             </Grid>
+
+
            <Grid item xs style={{paddingTop:'5vh'}}>
-               <div className={'col'}>
-
-               </div>
-
                <Card style={{backgroundColor:'#f9f9f9'}}>
                     <Grid container direction={'row'} style={{padding:20}} spacing={7}>
-                        <Grid item xs={5}>
+                        <Grid item  >
                             <h1>Thank you so much For visiting My Website!</h1> <br/>
                             <strong>If you have any questions, concerns, or just want to reach out, My information is on this page!<br/> <br/>
                                 I'll respond as quick as I can! <br/> <br/>
@@ -60,7 +58,7 @@ const Contact =()=>{
                             </strong>
                         </Grid>
 
-                        <Grid item xs={7} style={{textAlign:'center'}}>
+                        <Grid item  style={{textAlign:'center'}}>
                             <Grid container direction={'column'} alignItems={'center'}>
                                 <Grid item xs>
                                     <Typography variant="h4">
@@ -71,7 +69,6 @@ const Contact =()=>{
                                 <Grid item xs style={{textAlign:'center'}}>
                                     {/*<ContactCard>*/}
                                         <List>
-
                                                 <ListItem>
                                                     <ListItemIcon>
                                                         <LocalPhoneIcon />

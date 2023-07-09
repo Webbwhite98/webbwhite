@@ -1,22 +1,21 @@
 import React from 'react';
-import {Card, CardContent, Grid, Typography} from "@mui/material";
-import {styled} from "@mui/system";
+import {Card, CardContent, Grid,  Typography} from "@mui/material";
 import ProjectCard from "../other/ProjectCard";
+
 
 
 const Projects=()=>{
 
     return(
         <Grid container direction={'column'} spacing={4} style={{paddingTop:'5vh'}}>
-
             <Grid item xs className={'background-projects parallax'}>
                 <Grid container direction={'row'} alignItems={'center'}   justifyContent="center" >
-                    <Grid item xs={5} style={{paddingBottom:'10vh', paddingTop:'10vh'}}>
+                    <Grid item xs={9} style={{paddingBottom:'10vh', paddingTop:'10vh'}} >
                         <Card>
                             <Grid container direction={'column'} spacing={2} alignItems={'center'}>
                                 <CardContent>
                                     <Grid item xs >
-                                        <Typography variant="h1" color="text.secondary" component="div">
+                                        <Typography variant="h1" color="text.secondary" component="div" sx={{'@media (max-width: 567px)': {fontSize: '50px'}}}>
                                             Projects
                                         </Typography>
                                     </Grid>
@@ -32,11 +31,11 @@ const Projects=()=>{
             </Grid>
 
 
-            <Grid item xs style={{paddingLeft:'5%', paddingRight:'5%'}}>
+            <Grid item xs >
 
-                <Grid container direction={'row'} spacing={4}>
+                <Grid container direction={'row'} spacing={4}  sx={{'@media (max-width: 1800px)': {paddingLeft:'5%', paddingRight:'5%'}}}>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Mobile Scanning App'}
                             languages={"JS - React, Java - SpringBoot"}
@@ -46,7 +45,7 @@ const Projects=()=>{
                                 "and routers so the Technician could remove and add a router or modem to a Customer's Account while out in the field. This application used MSAL authentication."}
                         />
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'POS Admin App'}
                             languages={"TS - React, Java - SpringBoot"}
@@ -57,7 +56,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'AutoDraft Registration App'}
                             languages={"JS - React, Java - SpringBoot"}
@@ -67,7 +66,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Statistics for Salesforce App'}
                             languages={"Python - Flask"}
@@ -76,7 +75,7 @@ const Projects=()=>{
                                 "within the SalesForce application. This application used MSAL authentication."}
                         />
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Repair Ticketing App'}
                             languages={"TS - React"}
@@ -86,7 +85,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Repair Ticketing Closing Form'}
                             languages={"JS - Express"}
@@ -95,7 +94,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Google Extension For Call Center wait times'}
                             languages={"JS, PHP"}
@@ -105,7 +104,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'MFA Enforcement For SalesForce Application'}
                             languages={"Python - Flask"}
@@ -114,7 +113,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Application Upgrade from React 16 to React 18'}
                             languages={"JS - React"}
@@ -123,7 +122,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Ticketing Application Frontend & Power Automate backend'}
                             languages={"JS - React, Power Automate"}
@@ -133,7 +132,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'Supported Application Upgrade'}
                             languages={"Perl"}
@@ -142,7 +141,7 @@ const Projects=()=>{
                         />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <ProjectCard
                             title={'SEO Keyword Generator'}
                             languages={"JS - React, AWS - Amplify"}

@@ -18,16 +18,15 @@ const Home=()=>{
     return(
             <Grid  container direction={'column'}>
                 <Grid className={'background'} item xs style={{paddingTop:'15vh', paddingBottom:'10vh'}}>
-
-                    {/*<img src={Background} style={{width:'100%'}}/>*/}
-                    <Grid container direction={'row'} spacing={6} alignItems={'center'}>
-                        <Grid item xs style={{marginLeft:'30%', marginRight:'30%'}}>
-                            <Card sx={{ display: 'flex', opacity:'.9' }}>
+                    <Grid container direction={'row'}  justifyContent={"center"}>
+                        <Grid item xs={9} >
+                            <Card  sx={{ display: 'flex', opacity:'.9' }}>
                                 <Box sx={{ display: 'flex'}}>
 
                                    <Grid container direction={'row'}>
-                                    <Grid item xs>
-                                        <CardContent sx={{ flex: '1 0 auto'}}>
+                                    <Grid item xs sx={{ flex: '1 0 auto'}}>
+                                        {/*sx={{ flex: '1 0 auto'}}*/}
+                                        <CardContent >
                                             <CardMedia
                                                 component="img"
                                                 sx={{ width: '100%', opacity:1 }}
@@ -42,7 +41,7 @@ const Home=()=>{
                                        <Grid item xs>
                                            <Box sx={{ display: 'flex', alignItems: 'center'}}>
 
-                                               <Grid container direction={'column'}>
+                                               <Grid container direction={'column'} style={{textAlign:"center"}}>
                                                    <Grid item xs>
                                                        <Typography sx={{ mt: 4, mb: 2 }} variant="h5" component="div">
                                                            Full Stack Software Developer
@@ -66,6 +65,8 @@ const Home=()=>{
 
                             </Card>
                         </Grid>
+                        {/*<Grid item xs></Grid>*/}
+
                     </Grid>
 
 
@@ -75,7 +76,7 @@ const Home=()=>{
                         <PageTiles/>
                 </Grid>
 
-                    <Grid item xs>
+                    <Grid item xs className={'none'}>
 
                             <WebbTimeLine/>
 

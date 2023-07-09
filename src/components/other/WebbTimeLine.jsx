@@ -16,6 +16,10 @@ import BugReportIcon from '@mui/icons-material/BugReport';
 const WebbTimeLine=()=>{
 
     return (
+
+
+
+
         <Timeline position="alternate"style={{paddingTop:'5vh'}}>
             <div style={{textAlign:'center'}}>
                 <h1>My Professional Timeline</h1>
@@ -37,10 +41,11 @@ const WebbTimeLine=()=>{
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent className={'timeline'}  sx={{ py: '60px', px: 2 }}>
-                    <Typography variant="h4" component="span">
+                    <Typography variant="h4" component="span" sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '15px'},}}>
                         University of South carolina
                     </Typography>
-                    <Typography>BS - Integrated Information Technology</Typography>
+                    <Typography sx={{ '@media (max-width: 663px)': {fontSize: '12px'},}}>
+                        BS - Integrated Information Technology</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -60,10 +65,13 @@ const WebbTimeLine=()=>{
                 </TimelineSeparator>
 
                 <TimelineContent  className={'timeline'} sx={{ py: '60px', px: 2 }}>
-                    <Typography variant="h4" component="span">
+                    <Typography variant="h4" component="span"
+                                sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '15px'},
+                    }}>
                         Townsquare Interactive
                     </Typography>
-                    <Typography>Quality Assurance Analyst</Typography>
+                    <Typography sx={{ '@media (max-width: 663px)': {fontSize: '12px'},}}>
+                        Quality Assurance Analyst</Typography>
                 </TimelineContent>
 
 
@@ -84,10 +92,11 @@ const WebbTimeLine=()=>{
                     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 </TimelineSeparator>
                 <TimelineContent  className={'timeline'} sx={{ py: '60px', px: 2 }}>
-                        <Typography variant="h4" component="span">
+                        <Typography variant="h4" component="span"  sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '70%'},}}>
                             Comporium Communications
                         </Typography>
-                        <Typography>IT Systems Analyst II</Typography>
+                        <Typography sx={{ '@media (max-width: 663px)': {fontSize: '12px'},}}>
+                            IT Systems Analyst II</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -99,7 +108,7 @@ const WebbTimeLine=()=>{
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '60px', px: 2 }}>
-                    <Typography variant="h4" component="span">
+                    <Typography variant="h4" component="span" sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '15px'},}}>
                         Who Knows
                     </Typography>
 

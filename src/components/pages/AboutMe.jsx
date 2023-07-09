@@ -17,8 +17,8 @@ const AboutMe=()=>{
     return(
         <Grid container direction={'column'} spacing={4} alignItems={'center'} style={{paddingTop:'8vh'}}>
             <Grid item xs className={'background-about'} >
-                <Grid container direction={'row'} alignItems={'center'}   justifyContent="center" >
-                    <Grid item xs={5} style={{paddingBottom:'10vh', paddingTop:'10vh'}}>
+                <Grid container direction={'row'} alignItems={'center'}   justifyContent="center">
+                    <Grid item xs={9} style={{paddingBottom:'10vh', paddingTop:'10vh'}}>
                         <Card style={{opacity:'.9'}}>
                            <Grid container direction={'column'} spacing={2} alignItems={'center'}>
                                <CardContent>

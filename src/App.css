@@ -50,12 +50,12 @@ li {
 .menu__link {
   font-size: 1.2rem;
   color: white;
-  margin: 0 10px;
+  /*margin: 0 10px;*/
   display: inline-block;
   transition: 0.5s;
   text-decoration: none;
   opacity: 0.75;
-  /*font-weight: 300;*/
+  font-weight: 300;
 }
 .menu__link:hover{
   color: white;
@@ -63,6 +63,14 @@ li {
 
 .menu__link:hover {
   opacity: 1;
+}
+
+
+
+@media only screen and  (max-width: 500px) {
+  .css-5lbw0b-MuiTypography-root {
+    font-size: 10px;
+  }
 }
 
 .menu {
@@ -95,9 +103,12 @@ background-color: #202020;
 header a {
   color: #ffffff;
   display: block;
-  float: left;
+  /*float: left;*/
   text-align: center;
-  text-shadow: 0 1px 0 #000; }
+  text-shadow: 0 1px 0 #000;
+  margin-left: 15%;
+}
+
 
 header a:hover {
   color: #F2A900;
@@ -126,7 +137,7 @@ header a:hover {
 .header-mobile{
   display: none;
 }
-@media only screen and  (max-width: 848px) {
+@media only screen and  (max-width: 580px) {
   .header-mobile {
     display: block;
   }
@@ -134,12 +145,12 @@ header a:hover {
 }
 
 /*timeline*/
-@media only screen and  (max-width: 455px) {
+/*@media only screen and  (max-width: 455px) {*/
 
-   .timeline {
-   font-size: 10px;
-  }
-}
+/*   .timeline {*/
+/*   font-size: 10px;*/
+/*  }*/
+/*}*/
 
 
 @media only screen and  (max-width: 848px) {
