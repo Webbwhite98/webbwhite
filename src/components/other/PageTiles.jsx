@@ -28,7 +28,7 @@ const PageTiles=()=>{
     return(
         <div className={'container'}>
             <Grid container direction={'row'} spacing={10}>
-                <Grid item xs>
+                <Grid item xs={12} sm={6} md={4}>
                     <Card   style={{backgroundColor:'#A0A0A0'}} className={'hover-effect'} onClick={()=>navigate("/about")}>
                         <CardHeader
                             avatar={
@@ -52,7 +52,7 @@ const PageTiles=()=>{
                     </Card>
                 </Grid>
 
-                <Grid item xs>
+                <Grid item xs={12} sm={6} md={4}>
                     <Card  className={'hover-effect'} style={{backgroundColor:'#A0A0A0'} } onClick={()=>navigate("/projects")}>
                         <CardHeader
                             avatar={
@@ -77,7 +77,7 @@ const PageTiles=()=>{
                     </Card>
                 </Grid>
 
-                <Grid item xs>
+                <Grid item xs={12} sm={6} md={4}>
                     <Card  className={'hover-effect'}  style={{backgroundColor:'#A0A0A0'}} onClick={()=>navigate("/contact")}>
                         <CardHeader
                             avatar={
