@@ -35,7 +35,7 @@ const WebbTimeLine=()=>{
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot>
+                    <TimelineDot className={'rotate'}>
                         <SchoolIcon />
                     </TimelineDot>
                     <TimelineConnector />
@@ -58,7 +58,7 @@ const WebbTimeLine=()=>{
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot color="primary">
+                    <TimelineDot className={'rotate'} color="primary">
                         <BugReportIcon />
                     </TimelineDot>
                     <TimelineConnector />
@@ -86,8 +86,8 @@ const WebbTimeLine=()=>{
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot color="primary" variant="outlined">
-                        <CodeIcon />
+                    <TimelineDot className={'rotate'} color="primary" variant="outlined">
+                        <CodeIcon  />
                     </TimelineDot>
                     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 </TimelineSeparator>

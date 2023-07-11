@@ -65,6 +65,14 @@ li {
   opacity: 1;
 }
 
+.rotate:not(:hover){
+  transform: rotate(-360deg);
+  transition-duration: 1.5s;
+}
+.rotate:hover{
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
 
 
 @media only screen and  (max-width: 500px) {
@@ -196,6 +204,11 @@ header a:hover {
 .hover-effect:hover {
   transition: transform 0.3s ease;
   transform: scale(1.1);
+  cursor: pointer;
+}
+.hover-effect:not(:hover) {
+  transition: transform 0.2s ease;
+  transform: scale(1);
   cursor: pointer;
 }
 .parallax {
