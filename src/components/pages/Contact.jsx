@@ -25,7 +25,7 @@ const Contact =()=>{
     const gitHubUrl = "https://github.com/Webbwhite98?tab=repositories"
 
     return(
-        <Grid container  direction={'column'} alignItems={'center'}>
+        <Grid container  direction={'column'} alignItems={'center'} style={{minHeight:'100vh'}}>
 
             <Grid item xs className={'background-contact '} style={{paddingTop:'5vh', paddingBottom:'5vh'}}>
                 <Grid container direction={'column'} alignItems={'center'}>
