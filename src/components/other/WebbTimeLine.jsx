@@ -42,7 +42,7 @@ const WebbTimeLine=()=>{
                 </TimelineSeparator>
                 <TimelineContent className={'timeline'}  sx={{ py: '60px', px: 2 }}>
                     <Typography variant="h4" component="span" sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '15px'},}}>
-                        University of South carolina
+                        University of South Carolina
                     </Typography>
                     <Typography sx={{ '@media (max-width: 663px)': {fontSize: '12px'},}}>
                         BS - Integrated Information Technology</Typography>
@@ -99,23 +99,23 @@ const WebbTimeLine=()=>{
                             IT Systems Analyst II</Typography>
                 </TimelineContent>
             </TimelineItem>
-            <TimelineItem>
-                <TimelineSeparator>
-                    <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-                    <TimelineDot color="secondary">
-                        <RepeatIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: '60px', px: 2 }}>
-                    <Typography variant="h4" component="span" sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '15px'},}}>
-                        Who Knows
-                    </Typography>
+            {/*<TimelineItem>*/}
+            {/*    <TimelineSeparator>*/}
+            {/*        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />*/}
+            {/*        <TimelineDot color="secondary">*/}
+            {/*            <RepeatIcon />*/}
+            {/*        </TimelineDot>*/}
+            {/*        <TimelineConnector />*/}
+            {/*    </TimelineSeparator>*/}
+            {/*    <TimelineContent sx={{ py: '60px', px: 2 }}>*/}
+            {/*        <Typography variant="h4" component="span" sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '15px'},}}>*/}
+            {/*            Who Knows*/}
+            {/*        </Typography>*/}
 
-                </TimelineContent>
+            {/*    </TimelineContent>*/}
 
 
-            </TimelineItem>
+            {/*</TimelineItem>*/}
         </Timeline>
     );
 }

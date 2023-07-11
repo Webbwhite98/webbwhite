@@ -14,10 +14,10 @@ const Footer=()=>{
             {/*</div>*/}
 
             <ul className="menu">
-                <li className="nav-item"><NavLink to={"/"} className={'menu__link'} exact={true}>Home</NavLink></li>
-                <li className="menu__item"><NavLink to={"/about"} className={'menu__link'} exact={true}>About Me</NavLink></li>
-                <li className="menu__item"><NavLink to={"/projects"} className={'menu__link'} exact={true}>Projects</NavLink></li>
-                <li className="menu__item"><NavLink to={"/contact"} className={'menu__link'} exact={true}>Contact Me</NavLink></li>
+                <li className="menu__link-header"><NavLink to={"/"} className={'menu__link-header'} exact={true}>Home</NavLink></li>
+                <li className="menu__link-header"><NavLink to={"/about"} className={'menu__link-header'} exact={true}>About Me</NavLink></li>
+                <li className="menu__link-header"><NavLink to={"/projects"} className={'menu__link-header'} exact={true}>Projects</NavLink></li>
+                <li className="menu__link-header"><NavLink to={"/contact"} className={'menu__link-header'} exact={true}>Contact Me</NavLink></li>
 
 
 

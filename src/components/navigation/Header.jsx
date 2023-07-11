@@ -20,7 +20,7 @@ const Header =()=>{
 
 
                 {/*<img onClick={()=>navigate(`/`)} className={"navbar-brand"}  alt={'logo'}/>*/}
-                <div style={{paddingLeft:'10vw'}}>
+                <div style={{paddingLeft:'10vw'}}  onClick={()=>navigate(`/`)}>
                     <h2>Webb White</h2>
                 </div>
 
@@ -28,7 +28,7 @@ const Header =()=>{
                 <div className={'navbar-nav-scroll'} style={{paddingLeft:'15vw'}}>
                     <ul className={'nav justify-content-end'}>
                         <li className={'nav-item'}>
-                            <NavLink to={"/"} className={'menu__link'} exact={true}>Home</NavLink>
+                            <NavLink to={"/"} className={'menu__link-header'} exact={true}>Home</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -36,7 +36,7 @@ const Header =()=>{
                 <div className={'navbar-nav-scroll'}>
                     <ul className={'nav justify-content-end'}>
                         <li className={'nav-item'}>
-                            <NavLink to={"/about"} className={'menu__link'} exact={true}>About Me</NavLink>
+                            <NavLink to={"/about"} className={'menu__link-header'} exact={true}>About Me</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -45,14 +45,14 @@ const Header =()=>{
                 <div className={'navbar-nav-scroll'}>
                     <ul className={'nav justify-content-end'}>
                         <li className={'nav-item'}>
-                            <NavLink to={"/projects"} className={'menu__link'} exact={true}>Projects</NavLink>
+                            <NavLink to={"/projects"} className={'menu__link-header'} exact={true}>Projects</NavLink>
                         </li>
                     </ul>
                 </div>
                 <div className={'navbar-nav-scroll'}>
                     <ul className={'nav justify-content-end'}>
                         <li className={'nav-item'}>
-                            <NavLink to={"/contact"} className={'menu__link'} exact={true}>Contact Me</NavLink>
+                            <NavLink to={"/contact"} className={'menu__link-header'} exact={true}>Contact Me</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@ const Header =()=>{
 
                     {mobileNavOpen ?
                         <nav className="mobile-nav">
-                           <div style={{paddingTop:'1vh', paddingLeft:'10vw'}}>
+                           <div style={{paddingTop:'1vh', paddingLeft:'10vw'}}  onClick={()=>{navigate(`/`);setMobileNavOpen(!mobileNavOpen)}}>
                                <h2>Webb White</h2>
                            </div>
                             <ul>
