@@ -16,10 +16,6 @@ const Header =()=>{
     return(
         <>
             <header className={"navbar navbar-expand-sm flex-md-row bd-navbar"}>
-
-
-
-                {/*<img onClick={()=>navigate(`/`)} className={"navbar-brand"}  alt={'logo'}/>*/}
                 <div style={{paddingLeft:'10vw'}}  onClick={()=>navigate(`/`)}>
                     <h2>Webb White</h2>
                 </div>

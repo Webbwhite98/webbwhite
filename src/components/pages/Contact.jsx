@@ -8,17 +8,11 @@ import {useNavigate} from "react-router-dom";
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
 const DarkCard = styled(Card)({
-    backgroundColor: '#202020', // Off-white background color
-    // minWidth:800,
+    backgroundColor: '#202020',
     color:'white',
-    // marginTop: 50,
-    // padding: 20,
-
 });
-
-const ContactCard = styled('div')(({ theme }) => ({
-}));
 
 const Contact =()=>{
     const navigate= useNavigate();

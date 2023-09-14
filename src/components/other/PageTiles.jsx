@@ -1,24 +1,9 @@
 import React from 'react';
-import {
-    Avatar,
-    Button,
-    Card,
-    CardActions,
-    CardContent,
-    CardHeader,
-    Divider,
-    Grid,
-    IconButton,
-    Stack,
-    Typography
+import {Avatar, Button, Card, CardActions, CardContent, CardHeader, Grid, Typography
 } from "@mui/material";
-import * as PropTypes from "prop-types";
 import {useNavigate} from "react-router-dom";
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-function MoreVertIcon() {
-    return null;
-}
 
 const PageTiles=()=>{
 
@@ -85,7 +70,6 @@ const PageTiles=()=>{
                                     <ContactPhoneIcon/>
                                 </Avatar>
                             }
-
                         />
                         <CardContent>
                             <Typography variant="h5" component="div">

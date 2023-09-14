@@ -65,11 +65,8 @@ const Home=()=>{
 
                             </Card>
                         </Grid>
-                        {/*<Grid item xs></Grid>*/}
 
                     </Grid>
-
-
 
                 </Grid>
                 <Grid item xs style={{paddingTop:'5vh', width:'100%'}}>
@@ -77,9 +74,7 @@ const Home=()=>{
                 </Grid>
 
                     <Grid item xs className={'none'}>
-
                             <WebbTimeLine/>
-
                     </Grid>
 
 
