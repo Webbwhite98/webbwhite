@@ -82,7 +82,7 @@ const WebbTimeLine=()=>{
                     variant="body2"
                     color="white"
                 >
-                    2022-Present
+                    2022-2023
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                     <TimelineConnector />
@@ -97,6 +97,29 @@ const WebbTimeLine=()=>{
                         </Typography>
                         <Typography sx={{ '@media (max-width: 663px)': {fontSize: '12px'},}}>
                             IT Systems Analyst II</Typography>
+                </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+                <TimelineOppositeContent
+                    sx={{ m: 'auto 0' }}
+                    variant="body2"
+                    color="white"
+                >
+                    2023-Present
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot className={'rotate'} color="primary" variant="outlined">
+                        <CodeIcon  />
+                    </TimelineDot>
+                    <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                </TimelineSeparator>
+                <TimelineContent  className={'timeline'} sx={{ py: '60px', px: 2 }}>
+                    <Typography variant="h4" component="span"  sx={{mt: 4, mb: 2, '@media (max-width: 663px)': {fontSize: '70%'},}}>
+                        Spectrum Reach
+                    </Typography>
+                    <Typography sx={{ '@media (max-width: 663px)': {fontSize: '12px'},}}>
+                        Full Stack Developer</Typography>
                 </TimelineContent>
             </TimelineItem>
             {/*<TimelineItem>*/}

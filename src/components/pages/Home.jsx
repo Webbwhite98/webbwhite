@@ -49,12 +49,12 @@ const Home=()=>{
                                                    </Grid>
                                                    <Grid item xs>
                                                        <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-                                                           Proficient in React.js and Spring Boot Development
+                                                           Proficient in React.js & Spring Boot, Angular & Fast API Development
                                                        </Typography>
                                                    </Grid>
                                                    <Grid item xs>
                                                        <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-                                                           IT Systems Analyst II | Comporium Communications
+                                                           Full Stack Developer | Spectrum Reach
                                                        </Typography>
                                                    </Grid>
                                                </Grid>
